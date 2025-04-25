@@ -1,4 +1,4 @@
-package com.gustmannRonald.taskManeager;
+package com.gustmannRonald.taskManager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

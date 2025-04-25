@@ -1,0 +1,22 @@
+server:
+  port: 8080  # Porta da aplicação
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/taskmanager  # Conexão com o banco
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update     # Cria/atualiza tabelas automaticamente (cuidado em produção)
+    show-sql: true         # Mostra as queries SQL no terminal
+    properties:
+      hibernate:
+        format_sql: true   # Identação bonitinha no log
+
+# Swagger / OpenAPI
+springdoc:
+  api-docs:
+    path: /api-docs        # Caminho do JSON da API
+  swagger-ui:
+    path: /swagger-ui.html # Interface visual da API
